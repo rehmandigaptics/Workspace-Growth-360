@@ -7,6 +7,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import BackToTop from "../components/BackToTop";
 import BootstrapClient from "../components/BootstrapClient";
+import { sitePath } from "../lib/sitePath";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -51,8 +52,8 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
           rel="stylesheet"
         />
-        <link href="/assets/css/original.css" rel="stylesheet" />
-        <link href="/assets/css/inner.css" rel="stylesheet" />
+        <link href={sitePath("/assets/css/original.css")} rel="stylesheet" />
+        <link href={sitePath("/assets/css/inner.css")} rel="stylesheet" />
       </head>
       {/* suppressHydrationWarning: browser extensions (e.g. ColorZilla) inject body attrs */}
       <body suppressHydrationWarning>

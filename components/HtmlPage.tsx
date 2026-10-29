@@ -1,4 +1,5 @@
 import CrmPreview from "./CrmPreview";
+import { withBasePathInHtml } from "../lib/sitePath";
 
 type HtmlPageProps = {
   html: string;
@@ -18,7 +19,7 @@ export default function HtmlPage({
     <>
       <div
         className="wg-html-page"
-        dangerouslySetInnerHTML={{ __html: html }}
+        dangerouslySetInnerHTML={{ __html: withBasePathInHtml(html) }}
       />
       {withCrmPreview ? <CrmPreview /> : null}
     </>

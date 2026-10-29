@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { sitePath } from "../lib/sitePath";
 
 export default function Footer() {
   // Fixed year avoids Next.js prerender blocking on `new Date()` in the layout.
@@ -133,7 +134,7 @@ export default function Footer() {
               className="footer-v42-logo"
               height={35}
               loading="lazy"
-              src="/assets/images/360growthlab-logo.png"
+              src={sitePath("/assets/images/360growthlab-logo.png")}
               width={130}
             />
           </a>

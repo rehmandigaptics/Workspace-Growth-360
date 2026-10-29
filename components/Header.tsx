@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const serviceLinks = [
   { href: "/services", label: "CRM & Sales Systems", icon: "bi-buildings" },
@@ -23,13 +23,15 @@ const mainLinks = [
 
 export default function Header() {
   const pathname = usePathname();
-  const [open, setOpen] = useState(false);
-  const [servicesOpen, setServicesOpen] = useState(false);
-
-  useEffect(() => {
-    setOpen(false);
-    setServicesOpen(false);
-  }, [pathname]);
+  const [menuState, setMenuState] = useState({
+    pathname: "",
+    open: false,
+    servicesOpen: false,
+  });
+  if (menuState.pathname !== pathname) {
+    setMenuState({ pathname, open: false, servicesOpen: false });
+  }
+  const { open, servicesOpen } = menuState;
 
   const isActive = (href: string) =>
     href === "/"
@@ -54,7 +56,14 @@ export default function Header() {
             aria-label="Toggle navigation"
             className="navbar-toggler border-0"
             type="button"
-            onClick={() => setOpen((v) => !v)}
+            onClick={() =>
+              setMenuState((current) => ({
+                pathname,
+                open: current.pathname === pathname ? !current.open : true,
+                servicesOpen:
+                  current.pathname === pathname && current.servicesOpen,
+              }))
+            }
           >
             <span className="navbar-toggler-icon" />
           </button>
@@ -78,7 +87,16 @@ export default function Header() {
                   aria-expanded={servicesOpen}
                   className="nav-link dropdown-toggle btn btn-link"
                   type="button"
-                  onClick={() => setServicesOpen((v) => !v)}
+                  onClick={() =>
+                    setMenuState((current) => ({
+                      pathname,
+                      open: current.pathname === pathname && current.open,
+                      servicesOpen:
+                        current.pathname === pathname
+                          ? !current.servicesOpen
+                          : true,
+                    }))
+                  }
                 >
                   Services
                 </button>
@@ -90,7 +108,13 @@ export default function Header() {
                       <Link
                         className="dropdown-item"
                         href={l.href}
-                        onClick={() => setServicesOpen(false)}
+                        onClick={() =>
+                          setMenuState({
+                            pathname,
+                            open: false,
+                            servicesOpen: false,
+                          })
+                        }
                       >
                         <i aria-hidden="true" className={`bi ${l.icon}`} />{" "}
                         {l.label}

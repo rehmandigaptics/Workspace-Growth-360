@@ -39,8 +39,8 @@ fs.mkdirSync("public/assets/css", { recursive: true });
 function fixCss(src, dest) {
   let s = fs.readFileSync(src, "utf8");
   s = s.replace(/<\/?style>/gi, "");
-  s = s.replace(/url\((['"]?)(\.\.\/)?images\//g, "url($1/assets/images/");
-  s = s.replace(/url\((['"]?)assets\/images\//g, "url($1/assets/images/");
+  s = s.replace(/url\((['"]?)(\.\.\/)?images\//g, "url($1../images/");
+  s = s.replace(/url\((['"]?)assets\/images\//g, "url($1../images/");
   fs.writeFileSync(dest, s);
   console.log("wrote", dest, s.length);
 }
