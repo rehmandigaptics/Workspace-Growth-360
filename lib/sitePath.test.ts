@@ -3,7 +3,7 @@ import { sitePath, withBasePathInHtml } from "./sitePath";
 
 describe("sitePath", () => {
   it("keeps local paths unchanged without a base path", () => {
-    expect(sitePath("/contact")).toBe("/contact");
+    expect(sitePath("/contact", "")).toBe("/contact");
   });
 
   it("rewrites root-relative HTML URLs when a deployment base path is set", () => {
