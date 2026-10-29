@@ -1,0 +1,54 @@
+{
+  "home": {
+    "title": "CRM & Automation Services | Workspace Growth 360",
+    "description": "Workspace Growth 360 provides CRM implementation, lead generation, GoHighLevel and n8n automation services for growing businesses."
+  },
+  "about": {
+    "title": "About Our CRM & Automation Services | Workspace Growth 360",
+    "description": "CRM strategy, lead generation, GoHighLevel and n8n automation services from Workspace Growth 360."
+  },
+  "services": {
+    "title": "CRM, Lead Generation, n8n & GHL Services | Workspace Growth 360",
+    "description": "Premium workspaces, coworking CRM, lead generation and business automation solutions from Workspace Growth 360."
+  },
+  "crm": {
+    "title": "CRM Solutions | Workspace Growth 360",
+    "description": "Premium workspaces, coworking CRM, lead generation and business automation solutions from Workspace Growth 360."
+  },
+  "lead-generation": {
+    "title": "Lead Generation | Workspace Growth 360",
+    "description": "Premium workspaces, coworking CRM, lead generation and business automation solutions from Workspace Growth 360."
+  },
+  "n8n-automation": {
+    "title": "n8n Automation | Workspace Growth 360",
+    "description": "Premium workspaces, coworking CRM, lead generation and business automation solutions from Workspace Growth 360."
+  },
+  "gohighlevel": {
+    "title": "GoHighLevel Services | Workspace Growth 360",
+    "description": "Premium workspaces, coworking CRM, lead generation and business automation solutions from Workspace Growth 360."
+  },
+  "features": {
+    "title": "Features & Capabilities | Workspace Growth 360",
+    "description": "Explore CRM and growth capabilities: sales pipelines, lead capture, follow-ups, reporting, GoHighLevel, and connected automations."
+  },
+  "integrations": {
+    "title": "Integrations & Automation | Workspace Growth 360",
+    "description": "Learn how Workspace Growth 360 can connect CRM tools, GoHighLevel, n8n, forms, calendars, and compatible third-party apps."
+  },
+  "pricing": {
+    "title": "CRM Services & Quotes | Workspace Growth 360",
+    "description": "Premium workspaces, coworking CRM, lead generation and business automation solutions from Workspace Growth 360."
+  },
+  "how-it-works": {
+    "title": "How It Works | Workspace Growth 360",
+    "description": "Discover how Workspace Growth 360 plans, configures, automates and optimizes CRM, lead generation, n8n and GoHighLevel solutions."
+  },
+  "contact": {
+    "title": "Discuss Your CRM Project | Workspace Growth 360",
+    "description": "Premium workspaces, coworking CRM, lead generation and business automation solutions from Workspace Growth 360."
+  },
+  "workspaces": {
+    "title": "Digital Services | Workspace Growth 360",
+    "description": ""
+  }
+}
