@@ -7,6 +7,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import BackToTop from "../components/BackToTop";
 import BootstrapClient from "../components/BootstrapClient";
+import SmoothScroll from "../components/SmoothScroll";
 import { sitePath } from "../lib/sitePath";
 
 const dmSans = DM_Sans({
@@ -58,6 +59,7 @@ export default function RootLayout({
       {/* suppressHydrationWarning: browser extensions (e.g. ColorZilla) inject body attrs */}
       <body suppressHydrationWarning>
         <BootstrapClient />
+        <SmoothScroll />
         <Header />
         {children}
         <Footer />
