@@ -1076,6 +1076,11 @@ a.ex8-button.wg-ref-btn:hover > .wg-ref-btn-circle{background:#4d91ff!important;
 .crm47-below{gap:15px;margin-top:27px;padding:0 4px}
 .crm47-point{gap:10px}.crm47-point b{font-size:11px}.crm47-point small{font-size:10px;line-height:1.6}.crm47-point svg{color:#1b66e8}
 .crm47-bottom{margin-top:31px;border-top:1px solid #cdddf1;padding-top:24px}.crm47-bottom a{font-weight:900}
+.crm47-bottom-link{display:inline-flex;align-items:center;gap:12px;font-weight:900;color:#1762ef;transition:color .25s,transform .25s}
+.crm47-bottom-link:hover{color:#0e4bce}
+.crm47-bottom-icon{width:34px;height:34px;border-radius:50%;display:inline-grid;place-items:center;background:linear-gradient(145deg,#1762ef,#0b4fcc);color:#fff;box-shadow:0 10px 22px #1762ef33;transition:transform .25s,box-shadow .25s}
+.crm47-bottom-link:hover .crm47-bottom-icon{transform:translate(2px,-2px);box-shadow:0 14px 28px #1762ef44}
+.crm47-bottom-icon svg{display:block}
 @media(min-width:992px){.crm47-left{min-height:675px}.crm47-right{min-height:675px}}
 @media(max-width:991px){.crm47{padding:86px 0!important}.crm47-head{gap:18px;margin-bottom:32px}.crm47-head-copy{max-width:620px}.crm47-left{padding:43px 37px 35px!important}.crm47-left h3{margin-top:22px!important}.crm47-cta{margin-top:34px!important}.crm47-right{padding:23px!important}}
 @media(max-width:575px){.crm47{padding:70px 0!important}.crm47-title{font-size:clamp(38px,9vw,52px)!important}.crm47-head-copy{padding-left:16px;font-size:12px}.crm47-shell{border-radius:20px!important}.crm47-left{padding:33px 21px 32px!important}.crm47-left h3{font-size:35px!important}.crm47-left>p{font-size:12px!important}.crm47-tabs{margin-top:25px;gap:8px}.crm47-tab{min-height:58px;font-size:10px;padding:12px 9px;gap:7px;border-radius:11px}.crm47-tab svg{height:16px;width:16px}.crm47-cta{margin-top:27px!important}.crm47-right{padding:12px!important}.crm47-dashboard{padding:18px 11px!important;min-height:0}.crm47-dashhead h4{font-size:20px!important}.crm47-stat{padding:11px 7px}.crm47-stat b{font-size:19px}.crm47-stats,.crm47-kanban{gap:6px}.crm47-col{padding:8px 5px}.crm47-colhead{font-size:8px}.crm47-record{padding:9px 6px}.crm47-record b{font-size:9px}.crm47-below{grid-template-columns:1fr;gap:16px}.crm47-bottom{align-items:start;flex-direction:column}}
