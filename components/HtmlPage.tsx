@@ -46,8 +46,9 @@ export default function HtmlPage({
           panel.innerHTML = renderCrmDashboardHtml(viewKey);
         };
 
-        const onCrm47Click = (event: MouseEvent) => {
-          const target = event.target as Element | null;
+        const onCrm47Click = (event: Event) => {
+          const target =
+            event.target instanceof Element ? event.target : null;
           const btn = target?.closest(".crm47-tab") as HTMLElement | null;
           if (!btn || !root.contains(btn)) return;
 
@@ -66,8 +67,9 @@ export default function HtmlPage({
     // V69 customer-journey tabs (crm.html)
     const journey = root.querySelector(".v69-journey");
     if (journey) {
-      const onV69Click = (event: MouseEvent) => {
-        const target = event.target as Element | null;
+      const onV69Click = (event: Event) => {
+        const target =
+          event.target instanceof Element ? event.target : null;
         const btn = target?.closest(".v69-phase") as HTMLElement | null;
         if (!btn || !journey.contains(btn)) return;
         const phase = Number(btn.dataset.phase);
