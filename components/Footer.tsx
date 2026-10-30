@@ -79,7 +79,8 @@ export default function Footer() {
             <Link href="/">Home</Link>
             <Link href="/services">Our Services</Link>
             <Link href="/about">About Us</Link>
-            {/* Features + Integrations pages remain live; links hidden for client demo. */}
+            <Link href="/features">Features &amp; Capabilities</Link>
+            <Link href="/integrations">Integrations</Link>
             <Link href="/how-it-works">How It Works</Link>
           </nav>
           <nav

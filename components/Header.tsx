@@ -12,10 +12,11 @@ const serviceLinks = [
   { href: "/gohighlevel", label: "GoHighLevel (GHL)", icon: "bi-lightning-charge" },
 ] as const;
 
-// Features + Integrations pages remain live; links hidden for client demo.
 const mainLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About Us" },
+  { href: "/features", label: "Features" },
+  { href: "/integrations", label: "Integrations" },
   { href: "/pricing", label: "Pricing" },
   { href: "/how-it-works", label: "How It Works" },
   { href: "/contact", label: "Contact Us" },

@@ -8,3 +8,15 @@ html {
 body {
   margin: 0;
 }
+
+/* GoHighLevel / 360 Growth Lab contact embed */
+.contact-embed-wrap {
+  min-height: 490px;
+  overflow: hidden;
+}
+
+.contact-embed-wrap iframe {
+  display: block;
+  width: 100%;
+  min-height: 490px;
+}

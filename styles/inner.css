@@ -1067,7 +1067,7 @@
 
 /* V89 premium CRM consultation panel */
 .v89-contact-section{padding:110px 0 112px;background:radial-gradient(ellipse 45% 60% at 0 0,#e2ecff 0%,transparent 85%),linear-gradient(180deg,#f8fbff,#edf3fc)}
-.v89-contact-section .contact-panel{display:grid;grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr);gap:22px;align-items:stretch}
+.v89-contact-section .contact-panel{display:grid;grid-template-columns:minmax(0,.80fr) minmax(0,1.12fr);gap:22px;align-items:stretch}
 .v89-contact-section .contact-card{isolation:isolate;position:relative;overflow:hidden;border:1px solid #285391;border-radius:25px;padding:0!important;background:linear-gradient(150deg,#174e9a 0%,#0b2a57 44%,#061831 100%);box-shadow:0 30px 60px #06244d28}
 .v89-contact-section .contact-card:before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 110% 65% at 85% 0%,#3986ff59,transparent 65%),repeating-linear-gradient(135deg,#ffffff08 0 1px,transparent 1px 33px);pointer-events:none;z-index:-1}
 .v89-contact-section .contact-card:after{content:"";width:430px;height:430px;border:1px solid #a1c5ff29;border-radius:50%;position:absolute;right:-240px;bottom:-280px;box-shadow:0 0 0 70px #ffffff05,0 0 0 140px #ffffff03;pointer-events:none}
